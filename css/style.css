@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: "Poppins", serif;
+    margin: 0;
+    top: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    background-color: #f4f4f4;
+    width: 430px;
+    padding: 30px 10px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.container .signup-form{
+    position: absolute;
+    transform: translateX(110%);
+    transition: transform .1s ease-in;
+}
+
+.container .login-form{
+    transition: transform .1s ease-in;
+}
+
+.container.active .login-form{
+    transform: translateX(-110%);
+}
+
+.container.active{
+    height: 600px;
+}
+
+.container.active .signup-form{
+    transform: translateX(0);
+}
+
+.container h2{
+    margin: 10px 0 30px 0;
+    text-align: center;
+}
+
+.login-form{
+    width: 100%;
+    padding: 20px;
+    margin: 10px;
+}
+
+.signup-form{
+    width: 100%;
+    padding: 40px;
+    margin: 20px;
+}
+
+form .field{
+    margin-bottom: 20px;    
+}
+
+.input-field label{
+    margin-bottom: 8px;
+    display: block;
+}
+
+.input-field .form-control{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+}
+
+.input-field .form-control::placeholder{
+    color: rgba(0,0,0,0.5);
+}
+
+.field .error{
+    color: tomato;
+    text-align: left;
+    margin-top: 5px;
+}
+
+.form-control.shake{
+    /* border: 1px solid tomato; */
+    animation: shake .3s ease-in-out;
+}
+
+@keyframes shake {
+    0%{
+        margin-left: 0px;
+    }
+    50%{
+        margin-left: -12px;
+    }
+    100%{
+        margin-left: 12px;
+    }
+}
+
+.form-control.invalid{
+    outline: 1px solid tomato;
+}
+
+.remember-forgot, .terms-agree{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.remember-forgot input, label,
+.terms-agree input, label{
+    cursor: pointer;
+}
+
+.remember-forgot input,
+.terms-agree input{
+    margin-right: 5px;
+}
+
+.remember-forgot a{
+    text-decoration: none;
+}
+
+.remember-forgot a:hover{
+    text-decoration: underline;
+}
+
+.termChecked.uncheck{
+    appearance: none;
+    width: 13px;
+    height: 13px;
+    border-radius: 2px;
+    border: 2px solid tomato;
+}
+
+form .btn{
+    width: 100%;
+    background-color: rgba(0,0,0,0.3);
+    padding: 8px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+
+form .btn:hover{
+    background-color: gray;    
+}
+
+form .btn:active{
+    background-color: gray;
+    color: #fff; 
+}
+
+.login-register{
+    margin: 8px 0;
+    display: flex;
+}
+
+.login-register p{
+    margin-right: 5px;
+}

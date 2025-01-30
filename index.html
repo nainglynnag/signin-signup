@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in/Sign up</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    
+    <div class="container">
+        <!-- Sign In form  -->
+        <div class="login-form">
+            <h2>Sign in to your account</h2>
+
+            <form action="#" id="login">
+                <div class="field email">
+                    
+                    <div class="input-field">
+                        <label for="lemail">Email</label>
+                        <input type="text" name="lemail" id="lemail" class="form-control" placeholder="Enter your email address" required autofocus>
+                    </div>
+
+                    <!-- error -->
+                    <div class="error mail-err">
+                    </div>
+
+                </div>
+
+                <div class="field password">
+                    
+                    <div class="input-field">
+                        <label for="lpassword">Password</label>
+                        <input type="text" name="lpassword" id="lpassword" class="form-control" placeholder="Enter your password" required>
+                    </div>
+
+                    <!-- error -->
+                    <div class="error pass-err">
+                    </div>
+
+                </div>
+
+                <div class="remember-forgot">
+                    <label for="remember">
+                        <input type="checkbox" id="remember">Remember Me
+                    </label>
+
+                    <a href="#">Forgot Password?</a>
+                </div>
+
+                <button type="submit" id="signInBtn" class="btn">Sign in</button>
+
+                <div class="login-register">
+                    <p>Don't have an account? <a href="#" class="signup">Sign up</a></p>
+                </div>
+            </form>
+        </div>
+
+
+        <!-- Sign up form  -->
+        <div class="signup-form">
+            <h2>Create an account</h2>
+
+            <form action="#" id="signup">
+                <div class="field email">
+                    
+                    <div class="input-field">
+                        <label for="remail">Email</label>
+                        <input type="text" name="remail" id="remail" class="form-control" placeholder="Enter your email address" required autofocus>
+                    </div>
+
+                    <!-- error -->
+                    <div class="error rmail-err">
+                    </div>
+
+                </div>
+
+                <div class="field password">
+                    
+                    <div class="input-field">
+                        <label for="rpassword">Password</label>
+                        <input type="text" name="rpassword" id="rpassword" class="form-control" placeholder="Create your password" required>
+                    </div>
+
+                    <!-- error -->
+                    <div class="error rpass-err">
+                    </div>
+
+                </div>
+
+                <div class="field confirm-password">
+                    
+                    <div class="input-field">
+                        <label for="cpassword">Confirm Password</label>
+                        <input type="text" name="cpassword" id="cpassword" class="form-control" placeholder="Confirm your password">
+                    </div>
+
+                    <!-- error -->
+                    <div class="error cpass-err">
+                    </div>
+
+                </div>
+
+                <div class="terms-agree">
+                    <label for="terms-agree">
+                        <input type="checkbox" id="terms-agree" class="termChecked">I have read and agree to the terms and conditions.
+                    </label>
+                </div>
+
+                <button type="submit" id="signUpBtn" class="btn">Sign up</button>
+
+                <div class="register-login">
+                    <p>If you have an account? <a href="#" class="login">Sign in</a></p>
+                </div>
+            </form>
+
+        </div>
+
+    </div>
+
+
+    <script src="js/app.js"></script>
+    
+</body>
+</html>
